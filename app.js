@@ -61,6 +61,14 @@ checkBox.addEventListener('click',(e)=>{
     }
 })
 
+function playAudio(value) {
+    var audio = document.getElementById("my-audio");
+    audio.play();
+    setTimeout(() => { 
+        audio.pause(); 
+    }, value);
+}
+
 function setBallDefaultValueInInput(){
     xPosition.value = ball.x.toFixed(2);
     yPosition.value = ball.y;
@@ -150,6 +158,7 @@ function updateBall() {
         ball.y = canvas0.height - ball.radius;
         // ball.vx *= -0.3;
         ball.vy *= -ball.elasticity;
+        playAudio(ball.y);
       }
     // }
   }
