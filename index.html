@@ -5,18 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bouncing - Ball</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="input-container">
-        <h1>Heading</h1>
-        <input />
+        <h1>Ball Bounce</h1>
+        <label>
+            X Position: <br />
+            <input class="xPosition" type="number" name="xPosition" id="x" placeholder="x" />
+        </label>
+        <label>
+            Y Position: <br />
+            <input class="yPosition" type="number" name="yPosition" id="y" placeholder="y" />
+        </label>
+        <label>
+            Acceleration due to gravity (g): <br />
+            <input class="acceleration" type="number" placeholder="acceleration" />
+        </label>
+        
+        <label>
+            Elasticity: <br />
+            <input class="elasticity" type="number" placeholder="elasticity" />
+        </label>
+        <label>
+            Show Coordinate:
+            <input class="checkbox" type="checkbox" />
+        </label>
+        <button class="simulate-button">Simulate</button>
     </div>
     <div class="canvas-container">
         <canvas width="700" height="700" id="myCanvas0"></canvas>
         <canvas width="700" height="700" id="myCanvas1"></canvas>
     </div>
-    <script type='text/javascript' src='gl-matrix.js'></script>
-    <script src="app4.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

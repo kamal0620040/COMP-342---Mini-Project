@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.input-container{
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-container label{
+    margin: 5px 0px;
+}
+
+.input-container input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin: 5px 0px;
+}
+
+.input-container input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+}
+
+.input-container button{
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 0;
+}
+
+.canvas-container{
+    position: relative;
+}
+
+#myCanvas0 {
+    border: 5px solid teal;
+    border-radius: 15px;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#myCanvas1 {
+    /* border: 5px solid red; */
+    border-radius: 15px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
